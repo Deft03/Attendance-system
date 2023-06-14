@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Customer Satisfaction Survey Form</h1>
+        <p id="description">
+          Thank you for choosing our product/service. We value your feedback and
+          we would like to know how we can improve your experience. Please take
+          a few minutes to complete this survey and share your honest opinions
+          with us. Your responses will be kept confidential and will only be
+          used for research purposes. We appreciate your time and cooperation.
+        </p>
+      </header>
+
+      <form id="survey-form">
+        <div class="question">
+          <label for="name" id="name-label">What is your full name? </label
+          ><input
+            id="name"
+            type="text"
+            required
+            name="name"
+            class="ques-input"
+            placeholder="Enter you name" />
+        </div>
+
+        <div class="question">
+          <label for="email" id="email-label"
+            >What is your preferred contact email? </label
+          ><input
+            id="email"
+            type="email"
+            required
+            name="email"
+            class="ques-input"
+            placeholder="Enter your email" />
+        </div>
+
+        <div class="question">
+          <label for="number" id="number-label">How old are you? </label
+          ><input
+            id="number"
+            type="number"
+            name="age"
+            class="ques-input"
+            placeholder="Enter your age"
+            min="18"
+            max="120" />
+        </div>
+
+        <div class="question">
+          <p>How frequently do you interact with our product/service?</p>
+          <select id="dropdown" name="frequency" class="ques-input">
+            <option disabled selected value="">Select an option</option>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="occasionally">Occasionally</option>
+            <option value="never">Never</option>
+          </select>
+        </div>
+
+        <div class="question">
+          <p>How happy are you with our product/service?</p>
+          <label
+            ><input
+              name="customer-satisfaction"
+              type="radio"
+              checked
+              value="very-happy" />
+            Very happy</label
+          >
+          <label
+            ><input
+              name="customer-satisfaction"
+              type="radio"
+              value="very-happy" />
+            Happy</label
+          >
+          <label
+            ><input name="customer-satisfaction" type="radio" value="neutral" />
+            Neutral</label
+          >
+          <label
+            ><input name="customer-satisfaction" type="radio" value="unhappy" />
+            Unhappy</label
+          >
+          <label
+            ><input
+              name="customer-satisfaction"
+              type="radio"
+              value="very-unhappy" />
+            Very unhappy</label
+          >
+        </div>
+
+        <div class="question">
+          <p>Would you recommend our product/service to a friend?</p>
+          <select
+            id="recommend-others"
+            name="recommend-others"
+            class="ques-input">
+            <option disabled selected value="">Select an option</option>
+            <option value="definitely">Definitely</option>
+            <option value="maybe">Maybe</option>
+            <option value="not-sure">Not sure</option>
+          </select>
+        </div>
+
+        <div class="question">
+          <p>What aspects of our product/service do you enjoy the most?</p>
+          <label
+            ><input name="liked-aspects" type="checkbox" value="design" />
+            Design</label
+          >
+          <label
+            ><input
+              name="liked-aspects"
+              type="checkbox"
+              value="functionality" />
+            Functionality</label
+          >
+          <label
+            ><input name="liked-aspects" type="checkbox" value="performance" />
+            Performance</label
+          >
+          <label
+            ><input name="liked-aspects" type="checkbox" value="price" />
+            Price</label
+          >
+          <label
+            ><input name="liked-aspects" type="checkbox" value="c-support" />
+            Customer support</label
+          >
+          <label
+            ><input name="liked-aspects" type="checkbox" value="other" />
+            Other</label
+          >
+        </div>
+
+        <div class="question">
+          <p>
+            What feedback do you have for us to improve our product/service?
+          </p>
+          <textarea
+            id="feedback"
+            name="feedback"
+            placeholder="Please share your feedback here..."></textarea>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
